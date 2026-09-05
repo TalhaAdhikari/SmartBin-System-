@@ -10,7 +10,7 @@ class Bin{
    float weight;
    string location;
    int wasterype;
-   int weightofwaste;
+   float percentage;
 
    void getdata()
 {
@@ -28,7 +28,31 @@ class Bin{
       cin>>wastetype;
    
       cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weightofwaste;
+      cin>>weight;
+
+     
+ void display()
+         {
+            
+   if(weight!=10)
+     {
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+     }
+     else
+     {
+      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
+      
+   
+      percentage=weight/10*100
+
+      if(percentage>=75)
+      {
+      cout<<"TRUCK BOOKED"<<endl;
+      }
+      else
+      {
+      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
+      }
    }
 }; 
 
@@ -36,6 +60,7 @@ int main()
 {
 Bin b;
 b.getdata();
+b.display();
 return 0;
 }
 
