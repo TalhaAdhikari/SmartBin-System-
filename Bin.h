@@ -30,4 +30,12 @@ class Bin{
       cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       cin>>weightofwaste;
    }
-};
+}; 
+
+int main()
+{
+Bin b;
+b.getdata();
+return 0;
+}
+
