@@ -22,12 +22,17 @@ class Bin{
       cout<<"ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-"<<endl;
       cin>>location;
 
-      cout<<"WASTE TYPES:-
-             1.DRY WASTE.
-             2.WET WASTE.
-             3.HAZARDOUS WASTE.
-             4.E-WASTE.
-             5.ALL"<<endl;
+
+   
+  cout<<"WASTE TYPES:-"<<endl<<"1"".""DRY WASTE""." <<endl 
+     <<"2"".""WET WASTE""."<<endl
+     <<"3"".""HAZARDOUS WASTE""."<<endl
+     << "4"".""E""-""WASTE""."<<endl
+     << "5"".""ALL"<<endl;
+  
+   
+
+   
 
    
       cout<<"ENTER WASTE TYPE:-"<<endl;
