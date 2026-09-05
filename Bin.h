@@ -11,6 +11,10 @@ class Bin{
    string location;
    int wasterype;
    float percentage;
+   int dweight;
+   int wweight;
+   int hweight;
+   int eweight;
 
    void getdata()
 {
@@ -134,6 +138,21 @@ cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       break;
 
       case 5:
+
+      cout<<"ENTER THE WEIGHT OF DRY WASTE:-"<<endl;
+      cin>>dweight;
+
+      cout<<"ENTER THE WEIGHT OF WET WASTE:-"<<endl;
+      cin>>wweight;
+
+      cout<<"ENTER THER WEIGHT OF HAZARDOUS WASTE:-"<<endl;
+      cin>>hweight;
+
+      cout<<"ENTER THE WEIGHT OF E-WASTE:-"<<endl;
+      cin>>eweight;
+
+      
+      
       
       
 
