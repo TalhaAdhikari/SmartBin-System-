@@ -7,4 +7,9 @@ using namespace std;
 class Bin{
    public:
    int uuid;
+   float weight;
+
+   void getdata(){
+      cout<<"Enter "
+   }
 }
