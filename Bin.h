@@ -9,7 +9,7 @@ class Bin{
    int uuid;
    float weight;
    string location;
-   int wasterype;
+   int wastetype;
    float percentage;
    int dweight;
    int wweight;
@@ -45,7 +45,7 @@ class Bin{
       cin>>weight;
       if(weight!=10)
      {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
      }
      else
      {
@@ -69,7 +69,7 @@ class Bin{
       cin>>weight;
       if(weight!=10)
      {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
      }
      else
      {
@@ -94,7 +94,7 @@ cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       cin>>weight;
       if(weight!=10)
      {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
      }
      else
      {
@@ -119,7 +119,7 @@ cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       cin>>weight;
       if(weight!=10)
      {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
      }
      else
      {
