@@ -164,7 +164,22 @@ cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
    }
       
-      
+
+      percentage=weight/25*100;
+
+      if(percentage>=75)
+      {
+      cout<<"TRUCK BOOKED"<<endl;
+      }
+      else
+      {
+      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
+      }
+     break;
+
+    default:
+   cout<<"SORRY,INVALID CHOICE"<<endl;
+   break;
 
    }
 
