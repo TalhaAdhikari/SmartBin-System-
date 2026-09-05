@@ -21,20 +21,24 @@ class Bin{
              1.DRY WASTE.
              2.WET WASTE.
              3.HAZARDOUS WASTE.
-             4.E-WASTE."<<endl;
+             4.E-WASTE.
+             5.ALL"<<endl;
 
    
       cout<<"ENTER WASTE TYPE:-"<<endl;
       cin>>wastetype;
    
-      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weight;
-
+      
+      }
      
  void display()
-         {
-            
-   if(weight!=10)
+ {
+   switch(wastetype)
+   {
+      case 1:
+      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
+      cin>>weight;
+      if(weight!=10)
      {
       cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
      }
@@ -42,8 +46,8 @@ class Bin{
      {
       cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
       
-   
-      percentage=weight/10*100
+     }
+      percentage=weight/10*100;
 
       if(percentage>=75)
       {
@@ -53,7 +57,90 @@ class Bin{
       {
       cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
       }
+     break;
+
+      case 2:
+      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
+      cin>>weight;
+      if(weight!=10)
+     {
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+     }
+     else
+     {
+      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
+      
+     }
+      percentage=weight/10*100;
+
+      if(percentage>=75)
+      {
+      cout<<"TRUCK BOOKED"<<endl;
+      }
+      else
+      {
+      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
+      }
+
+      break;
+
+      case 3:
+cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
+      cin>>weight;
+      if(weight!=10)
+     {
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+     }
+     else
+     {
+      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
+      
+     }
+      percentage=weight/10*100;
+
+      if(percentage>=75)
+      {
+      cout<<"TRUCK BOOKED"<<endl;
+      }
+      else
+      {
+      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
+      }
+      break;
+
+      case 4:
+
+      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
+      cin>>weight;
+      if(weight!=10)
+     {
+      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<endl;
+     }
+     else
+     {
+      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
+      
+     }
+      percentage=weight/10*100;
+
+      if(percentage>=75)
+      {
+      cout<<"TRUCK BOOKED"<<endl;
+      }
+      else
+      {
+      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
+      }
+      break;
+
+      case 5:
+      
+      
+
    }
+
+ }
+            
 }; 
 
 int main()
