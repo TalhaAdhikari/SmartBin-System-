@@ -15,6 +15,7 @@ class Bin{
    int wweight;
    int hweight;
    int eweight;
+   int sum_of_weight;
 
    void getdata()
 {
@@ -151,8 +152,17 @@ cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
       cout<<"ENTER THE WEIGHT OF E-WASTE:-"<<endl;
       cin>>eweight;
 
-      
-      
+      sum_of_weight=dweight+wweight+hweight+eweight;
+
+   if (sum_of_weight!=25)
+   {
+    cout<<"THE WEIGHT OF YOUR WASTE IS NOT UNDER 25 KG"<<endl;
+   }
+
+   else
+   {
+      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
+   }
       
       
 
