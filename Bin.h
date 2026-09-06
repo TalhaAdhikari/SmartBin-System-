@@ -200,3 +200,9 @@ b.display();
 return 0;
 }
 
+/*NOTE FOR OTHER (WRITER TALHA)*/
+/*1)Sicne we are using .h extension to write this program we cannot use "using namespace std(it causes an error called header pollution)
+FIX:Use std::cout everywhere
+2)We will mostly reduce the number of wastes like right now we have 5 different types of wastes E-waste Wet-waste dry-waste hazardous-waste all-waste
+so for simplicity we will reduce it to maybe 2 or 3 max if everyone aggrees this step will be taken or else no change in number of wastes
+"*/
