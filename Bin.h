@@ -1,12 +1,13 @@
 #ifndef BIN_H
 #define BIN_H
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Bin{
+class Bin
+{
    public:
-   int uuid;
+   int uid;
    float weight;
    string location;
    int wastetype;
@@ -24,7 +25,8 @@ class Bin{
 
 
    
-  cout<<"WASTE TYPES:-"<<endl<<"1"".""DRY WASTE""." <<endl 
+  cout<<"WASTE TYPES:-"<<endl
+     <<"1"".""DRY WASTE""." <<endl 
      <<"2"".""WET WASTE""."<<endl
      <<"3"".""HAZARDOUS WASTE""."<<endl
      << "4"".""E""-""WASTE""."<<endl
