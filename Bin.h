@@ -2,13 +2,13 @@
 #define BIN_H
 
 #include<iostream>
-using namespace std;
 
-class Bin{
+class Bin
+{
    public:
-   int uuid;
+   int uid;
    float weight;
-   string location;
+   std::string location;
    int wastetype;
    float percentage;
    int dweight;
@@ -18,191 +18,173 @@ class Bin{
    int sum_of_weight;
 
    void getdata()
-{
-      cout<<"ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-"<<endl;
-      cin>>location;
+   {
+      std::cout<<"ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-"<<std::endl;
+      std::cin>>location;
 
+      std::cout<<"WASTE TYPES:-"<<std::endl
+               <<"1"".""DRY WASTE""." <<std::endl 
+               <<"2"".""WET WASTE""."<<std::endl
+               <<"3"".""HAZARDOUS WASTE""."<<std::endl
+               <<"4"".""E""-""WASTE""."<<std::endl
+               <<"5"".""ALL"<<std::endl;
 
-   
-  cout<<"WASTE TYPES:-"<<endl<<"1"".""DRY WASTE""." <<endl 
-     <<"2"".""WET WASTE""."<<endl
-     <<"3"".""HAZARDOUS WASTE""."<<endl
-     << "4"".""E""-""WASTE""."<<endl
-     << "5"".""ALL"<<endl;
-  
-   
-
-   
-
-   
-      cout<<"ENTER WASTE TYPE:-"<<endl;
-      cin>>wastetype;
-   
-      
-      }
+      std::cout<<"ENTER WASTE TYPE:-"<<std::endl;
+      std::cin>>wastetype;
+   }
      
- void display()
- {
-   switch(wastetype)
+   void display()
    {
-      case 1:
-      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weight;
-      if(weight!=10)
-     {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
-     }
-     else
-     {
-      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
-      
-     }
-      percentage=weight/10*100;
-
-      if(percentage>=75)
+      switch(wastetype)
       {
-      cout<<"TRUCK BOOKED"<<endl;
+         case 1:
+         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
+         std::cin>>weight;
+
+         if(weight!=10)
+         {
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
+         }
+
+         percentage=weight/10*100;
+
+         if(percentage>=75)
+         {
+            std::cout<<"TRUCK BOOKED"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+         }
+         break;
+
+         case 2:
+         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
+         std::cin>>weight;
+
+         if(weight!=10)
+         {
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
+         }
+
+         percentage=weight/10*100;
+
+         if(percentage>=75)
+         {
+            std::cout<<"TRUCK BOOKED"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+         }
+         break;
+
+         case 3:
+         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
+         std::cin>>weight;
+
+         if(weight!=10)
+         {
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
+         }
+
+         percentage=weight/10*100;
+
+         if(percentage>=75)
+         {
+            std::cout<<"TRUCK BOOKED"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+         }
+         break;
+
+         case 4:
+         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
+         std::cin>>weight;
+
+         if(weight!=10)
+         {
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
+         }
+
+         percentage=weight/10*100;
+
+         if(percentage>=75)
+         {
+            std::cout<<"TRUCK BOOKED"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+         }
+         break;
+
+         case 5:
+         std::cout<<"ENTER THE WEIGHT OF DRY WASTE:-"<<std::endl;
+         std::cin>>dweight;
+
+         std::cout<<"ENTER THE WEIGHT OF WET WASTE:-"<<std::endl;
+         std::cin>>wweight;
+
+         std::cout<<"ENTER THER WEIGHT OF HAZARDOUS WASTE:-"<<std::endl;
+         std::cin>>hweight;
+
+         std::cout<<"ENTER THE WEIGHT OF E-WASTE:-"<<std::endl;
+         std::cin>>eweight;
+
+         sum_of_weight=dweight+wweight+hweight+eweight;
+
+         if(sum_of_weight!=25)
+         {
+            std::cout<<"THE WEIGHT OF YOUR WASTE IS NOT UNDER 25 KG"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
+         }
+
+         percentage=weight/25*100;
+
+         if(percentage>=75)
+         {
+            std::cout<<"TRUCK BOOKED"<<std::endl;
+         }
+         else
+         {
+            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+         }
+         break;
+
+         default:
+         std::cout<<"SORRY,INVALID CHOICE!"<<std::endl;
+         break;
       }
-      else
-      {
-      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
-      }
-     break;
-
-      case 2:
-      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weight;
-      if(weight!=10)
-     {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
-     }
-     else
-     {
-      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
-      
-     }
-      percentage=weight/10*100;
-
-      if(percentage>=75)
-      {
-      cout<<"TRUCK BOOKED"<<endl;
-      }
-      else
-      {
-      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
-      }
-
-      break;
-
-      case 3:
-cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weight;
-      if(weight!=10)
-     {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
-     }
-     else
-     {
-      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
-      
-     }
-      percentage=weight/10*100;
-
-      if(percentage>=75)
-      {
-      cout<<"TRUCK BOOKED"<<endl;
-      }
-      else
-      {
-      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
-      }
-      break;
-
-      case 4:
-
-      cout<<"ENTER THE WEIGHT OF WASTE:-"<<endl;
-      cin>>weight;
-      if(weight!=10)
-     {
-      cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<endl;
-     }
-     else
-     {
-      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
-      
-     }
-      percentage=weight/10*100;
-
-      if(percentage>=75)
-      {
-      cout<<"TRUCK BOOKED"<<endl;
-      }
-      else
-      {
-      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
-      }
-      break;
-
-      case 5:
-
-      cout<<"ENTER THE WEIGHT OF DRY WASTE:-"<<endl;
-      cin>>dweight;
-
-      cout<<"ENTER THE WEIGHT OF WET WASTE:-"<<endl;
-      cin>>wweight;
-
-      cout<<"ENTER THER WEIGHT OF HAZARDOUS WASTE:-"<<endl;
-      cin>>hweight;
-
-      cout<<"ENTER THE WEIGHT OF E-WASTE:-"<<endl;
-      cin>>eweight;
-
-      sum_of_weight=dweight+wweight+hweight+eweight;
-
-   if (sum_of_weight!=25)
-   {
-    cout<<"THE WEIGHT OF YOUR WASTE IS NOT UNDER 25 KG"<<endl;
    }
-
-   else
-   {
-      cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<endl;
-   }
-      
-
-      percentage=weight/25*100;
-
-      if(percentage>=75)
-      {
-      cout<<"TRUCK BOOKED"<<endl;
-      }
-      else
-      {
-      cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<endl;
-      }
-     break;
-
-    default:
-   cout<<"SORRY,INVALID CHOICE"<<endl;
-   break;
-
-   }
-
- }
-            
-}; 
+};
 
 int main()
 {
-Bin b;
-b.getdata();
-b.display();
-return 0;
-}
+   Bin b;
+   b.getdata();
+   b.display();
 
-/*NOTE FOR OTHER (WRITER TALHA)*/
-/*1)Sicne we are using .h extension to write this program we cannot use "using namespace std(it causes an error called header pollution)
-FIX:Use std::cout everywhere
-2)We will mostly reduce the number of wastes like right now we have 5 different types of wastes E-waste Wet-waste dry-waste hazardous-waste all-waste
-so for simplicity we will reduce it to maybe 2 or 3 max if everyone aggrees this step will be taken or else no change in number of wastes
-"*/
+   return 0;
+}
