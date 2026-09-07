@@ -6,16 +6,10 @@
 class Bin
 {
    public:
-   int uid;
    float weight;
    std::string location;
    int wastetype;
    float percentage;
-   int dweight;
-   int wweight;
-   int hweight;
-   int eweight;
-   int sum_of_weight;
 
    void getdata()
    {
@@ -126,42 +120,6 @@ class Bin
          }
 
          percentage=weight/10*100;
-
-         if(percentage>=75)
-         {
-            std::cout<<"TRUCK BOOKED"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
-         }
-         break;
-
-         case 5:
-         std::cout<<"ENTER THE WEIGHT OF DRY WASTE:-"<<std::endl;
-         std::cin>>dweight;
-
-         std::cout<<"ENTER THE WEIGHT OF WET WASTE:-"<<std::endl;
-         std::cin>>wweight;
-
-         std::cout<<"ENTER THER WEIGHT OF HAZARDOUS WASTE:-"<<std::endl;
-         std::cin>>hweight;
-
-         std::cout<<"ENTER THE WEIGHT OF E-WASTE:-"<<std::endl;
-         std::cin>>eweight;
-
-         sum_of_weight=dweight+wweight+hweight+eweight;
-
-         if(sum_of_weight!=25)
-         {
-            std::cout<<"THE WEIGHT OF YOUR WASTE IS NOT UNDER 25 KG"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
-         }
-
-         percentage=weight/25*100;
 
          if(percentage>=75)
          {
