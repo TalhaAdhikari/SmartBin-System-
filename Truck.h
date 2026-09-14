@@ -35,9 +35,9 @@ public:
         if (b.wastetype == TruckWasteType) {
             if (b.percentage >= 75) {
                 if (currentLoad + b.weight <= maxLoad) {
-                    std::cout << "\nTruck reached at " << b.LOCATION;
+                    std::cout << "\nTruck reached at " << b.location;
                     currentLoad = currentLoad + b.weight;
-                    std::cout << "\nCollected " << b.weight << "kgs of " << b.wastetype << " from " << b.LOCATION;
+                    std::cout << "\nCollected " << b.weight << "kgs of " << b.wastetype << " from " << b.location;
                     b.weight = 0.0;
                     b.percentage = 0.0;
                     std::cout << "\nBin is now emptied and reset to 0.0kgs";

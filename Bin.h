@@ -35,7 +35,7 @@ class Bin
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight!=10)
+         if(weight<10)
          {
             std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
@@ -60,7 +60,7 @@ class Bin
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight!=10)
+         if(weight<10)
          {
             std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
@@ -85,7 +85,7 @@ class Bin
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight!=10)
+         if(weight<10)
          {
             std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
@@ -110,7 +110,7 @@ class Bin
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight!=10)
+         if(weight<10)
          {
             std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
@@ -137,12 +137,4 @@ class Bin
       }
    }
 };
-
-int main()
-{
-   Bin b;
-   b.getdata();
-   b.display();
-
-   return 0;
-}
+#endif
