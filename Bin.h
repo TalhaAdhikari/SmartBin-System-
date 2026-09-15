@@ -35,100 +35,64 @@ class Bin
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight<10)
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-         else
+         if(weight<=10)
          {
             std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
          }
-
-         percentage=weight/10*100;
-
-         if(percentage>=75)
-         {
-            std::cout<<"TRUCK BOOKED"<<std::endl;
-         }
          else
          {
-            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
+
+         percentage=weight/10*100;
          break;
 
          case 2:
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight<10)
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-         else
+         if(weight<=10)
          {
             std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
          }
-
-         percentage=weight/10*100;
-
-         if(percentage>=75)
-         {
-            std::cout<<"TRUCK BOOKED"<<std::endl;
-         }
          else
          {
-            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
+
+         percentage=weight/10*100;
          break;
 
          case 3:
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight<10)
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-         else
+         if(weight<=10)
          {
             std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
          }
-
-         percentage=weight/10*100;
-
-         if(percentage>=75)
-         {
-            std::cout<<"TRUCK BOOKED"<<std::endl;
-         }
          else
          {
-            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
+
+         percentage=weight/10*100;
          break;
 
          case 4:
          std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
          std::cin>>weight;
 
-         if(weight<10)
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-         else
+         if(weight<=10)
          {
             std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
          }
-
-         percentage=weight/10*100;
-
-         if(percentage>=75)
-         {
-            std::cout<<"TRUCK BOOKED"<<std::endl;
-         }
          else
          {
-            std::cout<<"BOOKING FAILED YOUR WASTE SHOULD MORE THAN 75%"<<std::endl;
+            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
          }
+
+         percentage=weight/10*100;
          break;
 
          default:

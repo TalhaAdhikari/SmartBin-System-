@@ -17,7 +17,7 @@ public:
     float maxLoad = 10.0;
 
     Truck() {
-        std::cout << "Enter the truck ID: ";
+        std::cout << "\nEnter the truck ID: ";
         std::cin >> truckId;
         /*UUID IS PENDING TO DEVELOP either user will assign or program will do it*/
         std::cout << "Enter the wastetype the truck needs to collect based on the following chart:\n";

@@ -11,9 +11,12 @@ int main(){
     SmartBin alertSystem;
     alertSystem.smartAlertFlag(b1);
 
-    cout << "\n\n=== INITIALIZING COLLECTION TRUCK ===\n";
+    if(b1.percentage<=75){
+        cout<<"\nCollection not required";
+    }
+    else{
     Truck t1;
     t1.addweight(b1);
-
+    }
     return 0;
 }
