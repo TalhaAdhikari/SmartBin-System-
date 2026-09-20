@@ -15,7 +15,7 @@ class Bin
    void getdata()
    {
       std::cout << "ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-" << std::endl;
-      std::cin >> location;
+      std::cin>>location;
 
       std::cout << "WASTE TYPES:-\n"
                 << "1. DRY WASTE.\n"
