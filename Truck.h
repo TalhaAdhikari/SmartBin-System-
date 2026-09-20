@@ -25,8 +25,7 @@ public:
                   << "1. DRY WASTE.\n"
                   << "2. WET WASTE.\n"
                   << "3. HAZARDOUS WASTE.\n"
-                  << "4. E-WASTE.\n"
-                  << "5. ALL\n";
+                  << "4. E-WASTE.\n";
         std::cin >> TruckWasteType;
         location = "Depot";
     }

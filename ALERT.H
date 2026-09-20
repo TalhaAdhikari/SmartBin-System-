@@ -17,12 +17,12 @@ public:
         }
         else if (b.percentage >= 80 && b.percentage < 100) {
             std::cout << "\nSMART ALERT: HIGH - Bin is almost full!";
-            std::cout << "\nTruck collection required soon!";
+            std::cout << "\nTruck booked";
         }
         else if (b.percentage == 100) {
             std::cout << "\nSMART ALERT: BIN FULL!";
             std::cout << "\nCannot add more waste!";
-            std::cout << "\nTruck collection required immediately!";
+            std::cout << "\nTruck booked";
         }
     }
 };

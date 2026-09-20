@@ -1,7 +1,8 @@
 #ifndef BIN_H
 #define BIN_H
 
-#include<iostream>
+#include <string>
+#include <iostream>
 
 class Bin
 {
@@ -13,92 +14,48 @@ class Bin
 
    void getdata()
    {
-      std::cout<<"ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-"<<std::endl;
-      std::cin>>location;
+      std::cout << "ENTER THE LOCATION WHERE TO COLLECT WASTE FROM:-" << std::endl;
+      std::cin >> location;
 
-      std::cout<<"WASTE TYPES:-"<<std::endl
-               <<"1"".""DRY WASTE""." <<std::endl 
-               <<"2"".""WET WASTE""."<<std::endl
-               <<"3"".""HAZARDOUS WASTE""."<<std::endl
-               <<"4"".""E""-""WASTE""."<<std::endl
-               <<"5"".""ALL"<<std::endl;
+      std::cout << "WASTE TYPES:-\n"
+                << "1. DRY WASTE.\n"
+                << "2. WET WASTE.\n"
+                << "3. HAZARDOUS WASTE.\n"
+                << "4. E-WASTE.\n";
 
-      std::cout<<"ENTER WASTE TYPE:-"<<std::endl;
-      std::cin>>wastetype;
+      std::cout << "ENTER WASTE TYPE:-" << std::endl;
+      std::cin >> wastetype;
    }
-     
+      
    void display()
+{
+   switch(wastetype)
    {
-      switch(wastetype)
-      {
-         case 1:
-         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
-         std::cin>>weight;
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+         std::cout << "ENTER THE WEIGHT OF WASTE:-" << std::endl;
+         std::cin >> weight;
 
-         if(weight<=10)
+         // Input loop: prevents advancing until a valid weight <= 10 is entered
+         while(weight > 10 || weight <= 0)
          {
-            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
+            std::cout << "INVALID WEIGHT! CAPACITY EXCEEDED (Max 10KG)." << std::endl;
+            std::cout << "PLEASE RE-ENTER WEIGHT OF WASTE:-" << std::endl;
+            std::cin >> weight;
          }
 
-         percentage=weight/10*100;
+         std::cout << "YOUR WASTE WEIGHT IS ACCEPTABLE" << std::endl;
+         percentage = (weight / 10.0f) * 100.0f;
          break;
 
-         case 2:
-         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
-         std::cin>>weight;
-
-         if(weight<=10)
-         {
-            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-
-         percentage=weight/10*100;
+      default:
+         std::cout << "SORRY, INVALID CHOICE!" << std::endl;
+         percentage = 0;
          break;
-
-         case 3:
-         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
-         std::cin>>weight;
-
-         if(weight<=10)
-         {
-            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-
-         percentage=weight/10*100;
-         break;
-
-         case 4:
-         std::cout<<"ENTER THE WEIGHT OF WASTE:-"<<std::endl;
-         std::cin>>weight;
-
-         if(weight<=10)
-         {
-            std::cout<<"YOUR WASTE WEIGHT IS ACCEPTABLE"<<std::endl;
-         }
-         else
-         {
-            std::cout<<"WEIGHT OF YOUR WASTE SHOULD UNDER 10KG"<<std::endl;
-         }
-
-         percentage=weight/10*100;
-         break;
-
-         default:
-         std::cout<<"SORRY,INVALID CHOICE!"<<std::endl;
-         break;
-      }
    }
+}
 };
+
 #endif
