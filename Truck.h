@@ -10,7 +10,7 @@ public:
     float weight = 0.0;
     int TruckWasteType;
     std::string location;
-    float Truckpercentage;
+    float Truckpercentage=0.0f;
     int sum_of_weight = 0;
     std::string truckId;
     float currentLoad = 0.0;
